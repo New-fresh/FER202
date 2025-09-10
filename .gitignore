@@ -1,0 +1,10 @@
+# Ignore for all React/Node apps under Code/
+**/node_modules/
+**/build/
+**/.env
+**/.env.*
+.vscode/
+*.log
+npm-debug.log*
+yarn-error.log*
+.DS_Store
