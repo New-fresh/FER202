@@ -13,6 +13,9 @@ export function Exercise3() {
     // ===== 6. Sort + slice theo năm kết thúc =====
     const sortedByEndAsc = [...companies].sort((a, b) => a.end - b.end);
     const top3 = sortedByEndAsc.slice(0, 3);
+    const sortFinanceDesc = [...companies]
+      .filter((c) => c.category === "Finance")
+      .sort((a, b) => b.end - a.end);
   
     // ===== 7. Spread vs Rest =====
     // Bất biến: sao chép company[0] nhưng tăng start
@@ -46,6 +49,14 @@ export function Exercise3() {
           {top3.map((c, i) => (
             <li key={i}>
               {c.name} - {c.end}
+            </li>
+          ))}
+        </ul>
+            
+        <ul>
+          {sortFinanceDesc.map((c, i) => (
+            <li key={i}>
+              {c.name} - {c.end} ({c.category})
             </li>
           ))}
         </ul>
