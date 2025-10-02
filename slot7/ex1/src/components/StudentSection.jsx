@@ -2,10 +2,10 @@ import StudentCard from './StudentCard';
 
 export default function StudentSection() {
   const students = [
-    { id: "DE160182", name: "Nguyễn Hữu Quốc Khánh", img: "/images/img2.png" },
-    { id: "DE160377", name: "Choy Vĩnh Thiện",        img: "/images/img3.png" },
-    { id: "DE160547", name: "Đỗ Nguyên Phúc",        img: "/images/img4.png" },
-    { id: "DE170049", name: "Lê Hoàng Minh",         img: "/images/img5.png" },
+    { id: "DE160182", name: "Nguyễn Hữu Quốc Khánh", adress: "DaNang",   img: "/images/img2.png" },
+    { id: "DE160377", name: "Choy Vĩnh Thiện",       adress: "QuangNam", img: "/images/img3.png" },
+    { id: "DE160547", name: "Đỗ Nguyên Phúc",        adress: "QuangNam", img: "/images/img4.png" },
+    { id: "DE170049", name: "Lê Hoàng Minh",         adress: "DaNang",   img: "/images/img5.png" },
   ];
 
   return (
