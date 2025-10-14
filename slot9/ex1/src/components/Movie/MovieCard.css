@@ -1,0 +1,19 @@
+.movie-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  .movie-poster {
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  

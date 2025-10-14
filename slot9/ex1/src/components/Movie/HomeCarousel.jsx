@@ -1,10 +1,10 @@
-// src/components/home/HomeCarousel.jsx
+
 import React from "react";
 import { Badge, Carousel } from "react-bootstrap";
-import { carouselMovies } from "../../data/carousel";
+
+import { carouselMovies } from "../../data/movies/carousel";
 
 export default function HomeCarousel() {
-  // Nếu mảng rỗng, không render để tránh lỗi
   if (!Array.isArray(carouselMovies) || carouselMovies.length === 0) return null;
 
   return (
